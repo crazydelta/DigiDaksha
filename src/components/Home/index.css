@@ -1,0 +1,157 @@
+.cont{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    min-height: 100vh;
+    font-family: Bebas Neue;
+}
+.main-heading{
+    font-family: Bebas Neue;
+    font-size: 40px;
+    font-weight: 30px;
+}
+
+.sub-para{
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+.topics-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.topics{
+    font-family: Bebas Neue;
+    font-size: 30px;
+    font-weight: 40px;
+    text-align: left;
+}
+
+.list-topics{
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.home-top-section{
+    background-image: url('../../Assets/BackgroundHome.png');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.succ{
+    padding:20px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-right: 20px;
+    animation: fadeInUp 0.4s ease-out forwards;
+}
+
+
+.top-content-home {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding-left: 20px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    min-height: 80vh;
+}
+
+@media (min-width: 768px) {
+    .top-content-home {
+        flex-direction: row;
+        margin: 20px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    .main-heading{
+        font-size: 100px;
+        font-weight: bold;
+    }
+    .sub-para{
+        font-size: 32px;
+    }
+    .topics{
+        font-size: 70px;
+        font-weight: bold;
+    }
+    .list-topics{
+        font-size: 50px;
+    }
+    .succ{
+        text-align: start;
+    }
+}
+
+.whatWeDo{
+    color: white;
+    background-color: black;
+    padding: 30px;
+}
+.home-images-titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.why{
+    padding: 20px;
+}
+.who-needs-us{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+}
+@media (min-width: 768px){
+    .who-needs-us{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.needuscard{
+    background-color: black;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    width: 100%;
+    padding-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-color: grey;
+}
+
+ol {
+    counter-reset: section;
+}
+
+ol li {
+    counter-increment: section;
+    margin-left: 10px;
+}
+
+ol li::marker {
+    font-size: 48px; /* Adjust the font size of the number */
+    color: gray; /* Set the color of the number to gray */
+    font-weight: bold;
+}
