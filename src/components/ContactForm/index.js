@@ -55,7 +55,7 @@ const Subtitle = styled.div`
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 `;
 
 const Label = styled.label`
@@ -63,7 +63,7 @@ const Label = styled.label`
   font-weight: 600;
   color: #ffffff; /* Light text color */
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.05rem;
 `;
 
 const Input = styled.input`
@@ -259,15 +259,17 @@ const ContactForm = () => {
             />
           </div>
 
-          {loading ? (
-            <StatusMessage>Loading...</StatusMessage>
-          ) : (
-            <SubmitButton type="submit">SUBMIT FORM</SubmitButton>
-          )}
+          <div style={{display:'flex',alignItems:'center', width: '100%',justifyContent:'center',padding:'15px'}}>
+            {loading ? (
+              <StatusMessage>Loading...</StatusMessage>
+            ) : (
+              <SubmitButton type="submit">SUBMIT FORM</SubmitButton>
+            )}
 
-          {status.message && (
-            <StatusMessage error={status.error}>{status.message}</StatusMessage>
-          )}
+            {status.message && (
+              <StatusMessage error={status.error}>{status.message}</StatusMessage>
+            )}
+          </div>
 
           <PrivacyText>
             By Clicking "Submit Non-Bindingly" You Agree To Our{' '}

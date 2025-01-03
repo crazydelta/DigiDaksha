@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import styled from 'styled-components';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
-import { Building2, User, Video, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
+import { Building2, User, Video, Mail, Phone, ArrowRight,MessageSquare} from 'lucide-react';
 
 const ContactWrapper = styled.div`
   min-height: 100vh;
@@ -176,21 +176,21 @@ const Contact = () => {
           <h3>Shoot Us an Email:</h3>
           <p>
             <Mail size={20} style={{ marginRight: '8px', verticalAlign: 'middle' }} />
-            dummy@digidaksha.com
+            info@digidaksha.com
           </p>
         </InfoItem>
         <InfoItem>
           <h3>Give Us a Ring:</h3>
           <p>
             <Phone size={20} style={{ marginRight: '8px', verticalAlign: 'middle' }} />
-            +91 123 456 7890
+            +91 8019612797
           </p>
         </InfoItem>
         <InfoItem>
           <h3>Swing By for a Chat:</h3>
           <p>
-            <MapPin size={20} style={{ marginRight: '8px', verticalAlign: 'middle' }} />
-            123 Innovation Drive, Tech Park, New Delhi, India
+            <MessageSquare size={24}  style={{ marginRight: '8px', verticalAlign: 'middle' }}/>
+            +91 8019612797
           </p>
         </InfoItem>
       </ContactInfo>

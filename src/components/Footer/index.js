@@ -46,7 +46,7 @@ const Footer = () => {
           </div>
         </FooterSection>
       </FooterContent>
-      <Copyright>© 2023 Digi Daksha. All rights reserved.</Copyright>
+      <Copyright>© 2025 Digi Daksha. All rights reserved.</Copyright>
     </FooterContainer>
   );
 };
